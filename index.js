@@ -3,7 +3,7 @@ const { default: { stream } } = require("got");
 const { createWriteStream } = require("fs");
 const { execSync } = require("child_process");
 
-const url = "https://ci.fredboat.com/repository/download/Lavalink_Build/.lastSuccessful/Lavalink.jar?guest=1&branch=refs/heads/dev";
+const url = "https://cdn.discordapp.com/attachments/798196676405755905/827174915714711572/Lavalink.jar";
 
 const start = () => {
     const download = stream(url).pipe(createWriteStream('Lavalink.jar'));
